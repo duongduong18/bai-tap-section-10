@@ -33,16 +33,13 @@ public class StudentServiceImpl implements StudentService {
 		System.out.println("---------------------");
 		System.out.println("Student Name :" + sts.getName() + "Student Tuoi :" + sts.getAge());
 
-		School school = new School();
 		SchoolServiceImpl scsi = new SchoolServiceImpl();
-		scsi.info(school);
-		sts.getSchool();
-		System.out.println("Truong " + sts.getSchool());
+		scsi.info(sts.getSchool());//cho no vao ham info cua schoolde doc ra thuoc tinh
+//		System.out.println("Truong " + sts.getSchool());//scholl la 1 doi tuong, thi sao la print ra dc
 
-		Adress adss = new Adress();
 		AdressService adsi = new AdressServiceImpl();
-		adsi.info(adss);
-		sts.getAdress();
-		System.out.println("Dia Chi :" + sts.getAdress());
+		adsi.info(sts.getAdress());
+//		;
+//		System.out.println("Dia Chi :" + sts.getAdress());
 	}
 }

@@ -17,10 +17,9 @@ public class SchoolServiceImpl implements SchoolService {
 
 	@Override
 	public void info(School scs) {
-		// TODO Auto-generated method stub
-System.out.println("Info Truong ");
-System.out.println("---------------------");
-System.out.println("ID Truong :" + scs.getIdSchool() + "Ten Truong :" + scs.getNameSchool());
+		System.out.println("Info Truong ");
+		System.out.println("---------------------");
+		System.out.println("ID Truong :" + scs.getIdSchool() + "Ten Truong :" + scs.getNameSchool());
 	}
 
 }
